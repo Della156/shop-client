@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,
+                            minimum-scale=1.0,user-scalable=no">
+    <title>仿饿了么App</title>
+    <!--引入静态资源里面的样式重置文件 "reset.css"-->
+    <link rel ="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_931343_em015ekpg44.css">
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+    <!--解决移动端点击响应延迟3s的问题-->
+      <script>
+        if ('addEventListener' in document) {
+          document.addEventListener('DOMContentLoaded', function() {
+               FastClick.attach(document.body);
+           }, false);
+        }
+        if(!window.Promise) {
+        document.writeln(
+          '<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+        }
+      </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
